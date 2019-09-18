@@ -14,6 +14,11 @@ Proof of Concept for the solution design provided by Microsoft in
 
 ![Image of Solution from Microsoft](https://github.com/Sanoobk/CICDContainers-Demo02/blob/master/Images/SolutionDesign.PNG)
 
+**Below is a rough aggregation of components, configurations and tools required for completing the solution.**
+
+![Components and Configuraiton list](https://github.com/Sanoobk/CI-CD-Containers-Azure-Kubernetes-Service/blob/master/Images/Components.PNG)
+
+
 ## Stage 1: Create and Configure Azure Services
 
 **1. Create Azure Resource Group, Azure Container Registry and Azure Kubernetes Service instance**
