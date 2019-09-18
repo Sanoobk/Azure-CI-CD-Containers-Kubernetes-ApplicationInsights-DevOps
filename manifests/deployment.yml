@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: sanoobkcicdcontainersdemo 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: sanoobkcicdcontainersdemo 
+    spec:
+      containers:
+        - name: sanoobkcicdcontainersdemo 
+          image: acrdemo777.azurecr.io/sanoobkcicdcontainersdemo 
+          ports:
+          - containerPort: 80
