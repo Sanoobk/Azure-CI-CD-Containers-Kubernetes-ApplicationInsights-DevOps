@@ -1,14 +1,10 @@
 ## CI CD for Containers using Azure Kubernetes Services with Application Insights
 
-Proof of Concept for the solution design provided by Microsoft in
-   their Azure Solution Architecture examples.  
+Proof of Concept for the solution design provided by Microsoft in their Azure Solution Architecture examples.  
    
- - Intent is to integrate services with basic configurations to make to solution work end to end.  
- - Not designed for Security, Performance, Availability and
-   Resilience.  
-   
- - Wherever possible, external references are provided
-   which helps in configuration.
+ - Intent is to integrate services with basic configurations to make the solution work end to end.  
+ - Not designed for Security, Performance, Availability and Resilience best practices.
+ - Wherever possible, external references are provided which helps in configuration.
 
 **Base Solution Architecture** - Provided by Microsoft - https://azure.microsoft.com/en-in/solutions/architecture/cicd-for-containers/
 
