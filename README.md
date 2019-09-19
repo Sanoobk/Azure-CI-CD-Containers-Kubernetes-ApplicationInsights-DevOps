@@ -95,7 +95,7 @@ Bugs can be created. Automatic work item creation is not yet available.
 **Step 2.b: Automatic Work Item Creation using Logic Apps**
 
 **Step 2.b.1: Create Logic App**
-Use Logic Apps to create a new Azure DevOps Boards Work Item (Issue) when an AKS Active Node Count metric is greater than 3.
+Use Logic Apps to create a new Azure DevOps Boards Work Item (Issue) when an AKS Active Pods Count metric is greater than 3.
 
 Links below can help with designing the simple Logic App.
 
