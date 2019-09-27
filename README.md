@@ -8,11 +8,11 @@ Proof of Concept for the solution design provided by Microsoft in their Azure So
 
 **Base Solution Architecture** - Provided by Microsoft - https://azure.microsoft.com/en-in/solutions/architecture/cicd-for-containers/
 
-![Image of Solution from Microsoft](https://github.com/Sanoobk/CICDContainers-Demo02/blob/master/Images/SolutionDesign.PNG)
+![Image of Solution from Microsoft](https://github.com/Sanoobk/Azure-CI-CD-Containers-Kubernetes-ApplicationInsights-DevOps/blob/master/Images/SolutionDesign.PNG)
 
 **Below is a rough aggregation of components, configurations and tools required for completing the solution.**
 
-![Components and Configuraiton list](https://github.com/Sanoobk/CI-CD-Containers-Azure-Kubernetes-Service/blob/master/Images/Components.PNG)
+![Components and Configuraiton list](https://github.com/Sanoobk/Azure-CI-CD-Containers-Kubernetes-ApplicationInsights-DevOps/blob/master/Images/Components.PNG)
 
 
 ## Stage 1: Create and Configure Azure Services
@@ -56,7 +56,7 @@ Test if Kubectl has permissions to the AKS Cluster
 **1. Create a new ASP.NET Core MVC Web Application with Docker integration for Linux**
 Created a basic ASP.NET MVC .NET Core Web Application with 'Enable Docker Support' integration for Linux. Enable local Git integration.
 
-![Image for the Docker Support Setting](https://github.com/Sanoobk/CICDContainers-Demo02/blob/master/Images/DockerIntegration.PNG)
+![Image for the Docker Support Setting](https://github.com/Sanoobk/Azure-CI-CD-Containers-Kubernetes-ApplicationInsights-DevOps/blob/master/Images/DockerIntegration.PNG)
 
 **Issue**: https://github.com/aspnet/aspnet-docker/issues/401
 Move the DockerFile created by VS2017 (Community Edition) one folder above to avoid issues during building and deployment. 
@@ -76,7 +76,7 @@ Follow the [video link](https://azure.microsoft.com/nl-nl/resources/videos/build
 
 **2. Configure PipeLine** On a high level, its as simple as creating the pipeline from the UI, connect to the GitHub repo and Authorize, select the 'Deploy to Azure Kubernetes Service' configuration and then provide the basic information on the screen about the AKS Cluster and ACR created in Stage 1.
 
-![Image for Task to depoy to AKS](https://github.com/Sanoobk/CICDContainers-Demo02/blob/master/Images/DeploytoAKS.PNG)
+![Image for Task to depoy to AKS](https://github.com/Sanoobk/Azure-CI-CD-Containers-Kubernetes-ApplicationInsights-DevOps/blob/master/Images/DeploytoAKS.PNG)
 
 **3. Pull the yml files to the local repo** - Once configured, three *.yml files will be created by the pipeline and added to the Remote GitHub repo. (azure-pipeline.yml, manifests/service.yml and manifests/deployment.yml). These files help to build the DockerFile, push the image to ACR and deploy the container to AKS cluster. Its a good shortcut to generate yaml/yml files for other automation requirements.
 
