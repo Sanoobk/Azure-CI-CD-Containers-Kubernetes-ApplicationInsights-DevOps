@@ -8,7 +8,7 @@ Proof of Concept for the solution design provided by Microsoft in their Azure So
 
 **Base Solution Architecture** - Provided by Microsoft - https://azure.microsoft.com/en-in/solutions/architecture/cicd-for-containers/
 
-![Image of Solution from Microsoft](https://github.com/Sanoobk/Azure-CI-CD-Containers-Kubernetes-ApplicationInsights-DevOps/Images/SolutionDesign.PNG)
+![Image of Solution from Microsoft](/Images/SolutionDesign.PNG)
 
 **Below is a rough aggregation of components, configurations and tools required for completing the solution.**
 
